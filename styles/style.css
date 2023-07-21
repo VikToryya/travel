@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;800;900&display=swap);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  background-image: url(../assets/img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  position: fixed;
+  left: 0;
+  z-index: -1;
+  top: 0;
+}
+.header {
+  width: 100%;
+  margin-top: 99px;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .wrapper {
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  padding-bottom: 12.24px;
+}
+.logo-link {
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.nav-link {
+  position: relative;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.active::after {
+  content: "";
+  width: 16px;
+  height: 3px;
+  background-color: #e30a17;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -8px;
+}
+.popup {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 296px;
+}
+.popup-body {
+  padding: 23px 35px;
+  background: linear-gradient(
+    90.44deg,
+    rgba(255, 255, 255, 0.5) -3.55%,
+    rgba(255, 255, 255, 0) 120.14%
+  );
+  backdrop-filter: blur(11.7037px);
+}
+.popup-heading {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18.7259px;
+  line-height: 22px;
+  margin-bottom: 4px;
+  color: #ffffff;
+}
+.popup-text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+.popup-link {
+  width: 100%;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 60px;
+  background-color: #e30a17;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.0444px;
+  line-height: 17px;
+  color: #ffffff;
+  background-image: url(../assets/icons/Group3.svg);
+  background-repeat: no-repeat;
+  background-position: center right 34px;
+}
